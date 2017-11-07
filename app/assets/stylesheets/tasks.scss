@@ -1,0 +1,24 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  width: 50vw;
+}
+
+.padding-center{
+  padding: 20px;
+}
+
+li {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #eee;
+  align-items: center;
+}
+
+li > div {
+  flex: 0 0 auto;
+}

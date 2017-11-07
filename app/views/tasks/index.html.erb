@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class='text-center'>Task manager</h1>
+
+  <div class="text-center padding-center">
+    <%= link_to "new task", new_task_path, class: 'btn btn-primary' %>
+  </div>
+
+  <ul>
+    <% @tasks.each do |task| %>
+      <li>
+        <div><input type="checkbox" <%= 'checked' if task.completed %> onclick="return false;"/></div>
+        <div><%= link_to task.title, task_path(task) %></div>
+        <div><%= link_to "Delete", task_path(task), method: :delete, class: 'btn btn-danger'%></div>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+
+<%= link_to 'edit_task', edit_task_path(params[:id]) %>
+<%= @task.details %>
+<%= @task.completed %>
+
+<%= link_to 'back to tasks', tasks_path %>
